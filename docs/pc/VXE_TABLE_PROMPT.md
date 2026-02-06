@@ -23,7 +23,7 @@
 
 - 数字输入: 对于最小值、最大值等数字字段，必须配置 `type: 'number'`
   ```javascript
-  editRender: { name: 'input', attrs: { type: 'number' } }
+  editRender: { name: 'input', props: { type: 'number' } }
   ```
 
 ### 4. API 集成准备
@@ -181,12 +181,15 @@ const gridOptions = reactive({
         span: 6,
         itemRender: {
           name: 'VxeSelect',
-          props: { placeholder: '全部状态', clearable: true },
-          options: [
-            { label: '全部', value: '' },
-            { label: '启用', value: '1' },
-            { label: '禁用', value: '0' }
-          ]
+          props: {
+            placeholder: '全部状态',
+            clearable: true,
+            options: [
+              { label: '全部', value: '' },
+              { label: '启用', value: '1' },
+              { label: '禁用', value: '0' }
+            ]
+          }
         }
       },
       {
@@ -232,21 +235,21 @@ const detailGridOptions = reactive({
       field: 'name',
       title: '名称',
       minWidth: 150,
-      editRender: { name: 'input', attrs: { placeholder: '请输入名称' } }
+      editRender: { name: 'input', props: { placeholder: '请输入名称' } }
     },
     {
       field: 'minValue',
       title: '最小值',
       width: 120,
       align: 'right',
-      editRender: { name: 'input', attrs: { type: 'number', placeholder: '可选' } }
+      editRender: { name: 'input', props: { type: 'number', placeholder: '可选' } }
     },
     {
       field: 'maxValue',
       title: '最大值',
       width: 120,
       align: 'right',
-      editRender: { name: 'input', attrs: { type: 'number', placeholder: '可选' } }
+      editRender: { name: 'input', props: { type: 'number', placeholder: '可选' } }
     },
     {
       title: '操作',
@@ -487,27 +490,27 @@ const gridOptions = reactive({
       field: 'code',
       title: '编码',
       width: 150,
-      editRender: { name: 'input', attrs: { placeholder: '请输入' } }
+      editRender: { name: 'input', props: { placeholder: '请输入' } }
     },
     {
       field: 'name',
       title: '名称',
       minWidth: 150,
-      editRender: { name: 'input', attrs: { placeholder: '请输入' } }
+      editRender: { name: 'input', props: { placeholder: '请输入' } }
     },
     {
       field: 'minValue',
       title: '最小值',
       width: 120,
       align: 'right',
-      editRender: { name: 'input', attrs: { type: 'number', placeholder: '' } }
+      editRender: { name: 'input', props: { type: 'number', placeholder: '' } }
     },
     {
       field: 'maxValue',
       title: '最大值',
       width: 120,
       align: 'right',
-      editRender: { name: 'input', attrs: { type: 'number', placeholder: '' } }
+      editRender: { name: 'input', props: { type: 'number', placeholder: '' } }
     },
     {
       title: '操作',
@@ -729,7 +732,7 @@ editRender: {
 正确: 指定 type="number"
 
 ```javascript
-editRender: { name: 'input', attrs: { type: 'number' } }
+editRender: { name: 'input', props: { type: 'number' } }
 ```
 
 ### 4. 输入框宽度不对
@@ -984,7 +987,7 @@ const formValues = gridRef.value?.getFormData() // 获取表单数据
 
 ### 数据处理
 
-4. **数据类型**: 数字字段必须配置 `attrs: { type: 'number' }`
+4. **数据类型**: 数字字段必须配置 `props: { type: 'number' }`
 5. **响应式数据**: 使用 `reactive()` 包装配置对象, `ref()` 包装数组数据
 6. **数据刷新**: 使用 `commitProxy('query')` 触发代理查询
 
