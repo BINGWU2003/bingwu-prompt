@@ -1,13 +1,1 @@
 node_modules
-.vitepress/cache
-.vitepress/dist
-.vitepress/temp
-.vitepress/public
-.vitepress/src
-.vitepress/styles
-.vitepress/templates
-.vitepress/config.mts
-.vitepress/config.ts
-.vitepress/config.js
-.vitepress/config.json
-.vitepress/config.yaml
