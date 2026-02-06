@@ -7,19 +7,50 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
+      { text: '首页', link: '/' },
+      { text: '使用指南', link: '/markdown-examples' },
+      { text: '提示词分类', link: '/api-examples' },
       {
-        text: 'Examples',
+        text: '小程序开发',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Vue2 UI 设计指南', link: '/docs/miniprogram/MINIPROGRAM_VUE2_UI_GUIDE' }
+        ]
+      },
+      {
+        text: 'PC 端开发',
+        items: [
+          { text: 'VXE Table 使用', link: '/docs/pc/VXE_TABLE_PROMPT' }
         ]
       }
     ],
+
+    sidebar: {
+      '/docs/miniprogram/': [
+        {
+          text: '小程序开发',
+          items: [
+            { text: 'Vue2 UI 设计指南', link: '/docs/miniprogram/MINIPROGRAM_VUE2_UI_GUIDE' }
+          ]
+        }
+      ],
+      '/docs/pc/': [
+        {
+          text: 'PC 端开发',
+          items: [
+            { text: 'VXE Table 使用', link: '/docs/pc/VXE_TABLE_PROMPT' }
+          ]
+        }
+      ],
+      '/': [
+        {
+          text: '指南',
+          items: [
+            { text: '使用指南', link: '/markdown-examples' },
+            { text: '提示词分类', link: '/api-examples' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
