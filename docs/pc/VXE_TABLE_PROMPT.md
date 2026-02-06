@@ -274,7 +274,7 @@ const detailGridOptions = reactive({
 ```javascript
 async function handleCellClick({ row, column }) {
   // 排除操作列
-  if (column.property !== 'operation') {
+  if (column.field !== 'operation') {
     selectedRow.value = row
     gridRef.value?.setCurrentRow(row) // 高亮当前行
     await loadDetailData(row.id)
