@@ -2,48 +2,72 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# 提示词分类
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+本页面按照不同领域和使用场景对提示词进行分类，方便你快速找到需要的内容。
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+## 编程开发
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+适用于软件开发、代码编写、调试等场景的提示词。
 
-const { theme, page, frontmatter } = useData()
-</script>
+### 代码生成
+- 待添加：前端组件开发
+- 待添加：后端 API 接口
+- 待添加：数据库设计
+- 待添加：算法实现
 
-## Results
+### 代码审查与优化
+- 待添加：代码重构建议
+- 待添加：性能优化
+- 待添加：安全审查
 
-### Theme Data
-<pre>{{ theme }}</pre>
+### 调试与问题解决
+- 待添加：错误排查
+- 待添加：日志分析
 
-### Page Data
-<pre>{{ page }}</pre>
+## 内容创作
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
+适用于文章写作、文案创作、内容策划等场景的提示词。
 
-<script setup>
-import { useData } from 'vitepress'
+### 技术写作
+- 待添加：技术博客
+- 待添加：API 文档
+- 待添加：教程编写
 
-const { site, theme, page, frontmatter } = useData()
-</script>
+### 营销文案
+- 待添加：产品介绍
+- 待添加：广告文案
+- 待添加：社交媒体内容
 
-## Results
+## 数据分析
 
-### Theme Data
-<pre>{{ theme }}</pre>
+适用于数据处理、分析、可视化等场景的提示词。
 
-### Page Data
-<pre>{{ page }}</pre>
+- 待添加：数据清洗
+- 待添加：统计分析
+- 待添加：图表生成
+- 待添加：报告撰写
 
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
+## 设计创意
 
-## More
+适用于 UI/UX 设计、创意策划等场景的提示词。
 
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+- 待添加：界面设计建议
+- 待添加：配色方案
+- 待添加：用户体验优化
+- 待添加：创意头脑风暴
+
+## 其他领域
+
+其他实用场景的提示词。
+
+- 待添加：学习辅助
+- 待添加：翻译润色
+- 待添加：会议纪要
+- 待添加：邮件撰写
+
+---
+
+::: tip 提示
+以上分类会持续更新，敬请期待！如果你有好的提示词想要分享，欢迎贡献。
+:::

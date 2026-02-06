@@ -1,85 +1,70 @@
-# Markdown Extension Examples
+# 提示词使用指南
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+本页面介绍如何有效使用 AI 提示词，以及本站提示词的格式说明。
 
-## Syntax Highlighting
+## 什么是提示词
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+提示词（Prompt）是与 AI 对话时输入的指令或问题。一个好的提示词能够：
 
-**Input**
+- 让 AI 更准确理解你的需求
+- 获得更高质量的输出结果
+- 提高工作效率，减少反复调整
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
+## 提示词基本结构
 
-**Output**
+一个完整的提示词通常包含以下部分：
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
+**基本格式**
 
 ```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
+角色定位 + 任务描述 + 具体要求 + 输出格式
 ```
 
-**Output**
+**示例**
 
-::: info
-This is an info box.
+```md
+你是一位资深的前端开发工程师。
+请帮我编写一个 Vue 3 组件，实现用户登录表单功能。
+要求：
+- 包含用户名和密码输入框
+- 添加表单验证
+- 使用 Composition API
+- 代码要有详细注释
+```
+
+## 提示词使用技巧
+
+::: tip 明确具体
+避免模糊的描述，提供具体的细节和要求。
+例如：不要说"写一篇文章"，而是"写一篇 800 字的技术博客，介绍 Vue 3 的响应式原理"
 :::
 
-::: tip
-This is a tip.
+::: tip 提供上下文
+给 AI 足够的背景信息，帮助它更好地理解你的需求。
+例如：说明项目类型、技术栈、目标用户等
 :::
 
-::: warning
-This is a warning.
+::: tip 分步骤引导
+对于复杂任务，可以将其拆分为多个步骤，逐步引导 AI 完成。
 :::
 
-::: danger
-This is a dangerous warning.
+::: tip 指定输出格式
+明确告诉 AI 你期望的输出格式，如代码、表格、列表等。
 :::
 
-::: details
-This is a details block.
+## 本站提示词格式说明
+
+本站的提示词按照以下格式组织：
+
+::: details 查看格式说明
+- **标题**：简洁描述提示词的用途
+- **分类**：标注所属领域（编程、写作、设计等）
+- **适用场景**：说明适合在什么情况下使用
+- **提示词内容**：完整的提示词文本
+- **使用示例**：实际应用的例子（如有）
+- **注意事项**：使用时需要注意的要点（如有）
 :::
 
-## More
+## 开始探索
 
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+准备好了吗？浏览 [提示词分类](/api-examples) 页面，找到适合你的提示词！

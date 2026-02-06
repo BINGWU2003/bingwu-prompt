@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "bingwu-prompt",
-  description: "A VitePress Site",
+  description: "精选 AI 提示词库 - 个人收集整理的高质量 AI 提示词，涵盖编程、写作、设计等多个领域，助力提升 AI 使用效率",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
