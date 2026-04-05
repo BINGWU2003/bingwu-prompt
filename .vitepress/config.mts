@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "bingwu-prompt",
   description: "精选 AI 提示词库 - 个人收集整理的高质量 AI 提示词，涵盖编程、写作、设计等多个领域，助力提升 AI 使用效率",
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -53,7 +56,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/BINGWU2003/bingwu-prompt' }
     ]
   }
 })
